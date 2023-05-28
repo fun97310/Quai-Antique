@@ -1,11 +1,13 @@
 
 ###> symfony/framework-bundle ###
 /.env.local
+/.env
 /.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
+/bin/
 /vendor/
 ###< symfony/framework-bundle ###
 
@@ -18,3 +20,45 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+
+
+# Fichiers de logs Symfony
+/var/*.log
+/var/log/*
+!/var/log/.gitkeep
+
+# Fichiers de cache Symfony
+/var/cache/
+!/var/cache/.gitkeep
+
+# Fichiers de sessions Symfony
+/var/sessions/
+!/var/sessions/.gitkeep
+
+# Fichiers de fichiers traduits
+/translations/*.yaml
+
+# Fichier d'environnement
+/.env
+
+# Fichiers de configuration IDE
+/.idea/
+
+# Fichiers de sauvegarde
+*.bak
+*.swp
+
+# Fichiers de dépendances Composer
+/composer.lock
+/vendor/
+
+# Fichiers de configuration spécifiques à l'utilisateur
+/config/packages/doctrine.yaml
+/config/packages/swiftmailer.yaml
+/config/packages/security.yaml
+
+# Fichier de configuration d'exemple
+/config/packages/example.yaml
+
+
+
